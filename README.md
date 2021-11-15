@@ -14,10 +14,10 @@ If he does run into you, you die. Pol's movement gets slightly faster after you 
 Oh, one last thing: sometimes during the game Pol will enter a "frenzy" where he temporarily moves much faster. You'll know when it happens.
 
 ## Controls
-WASD - Move around (forward, left, right, backwards respectively)
-Mouse - Look around
-Collide/walk into object - Interact with object or pick it up
-Escape - quit game (build versions only)
+- WASD - Move around (forward, left, right, backwards respectively)
+- Mouse - Look around
+- Collide/walk into object - Interact with object or pick it up
+- Escape - quit game (build versions only)
 
 ## Credits
 Thanks to the following sources for creating and contributing resources used in this project:
