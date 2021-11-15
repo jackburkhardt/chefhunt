@@ -53,7 +53,7 @@ public class PlayerControls : MonoBehaviour
                 AudioHandler.Play("walk");
             }
 
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(0.35f);
         }
     }
 }

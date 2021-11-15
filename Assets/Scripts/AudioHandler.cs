@@ -15,7 +15,9 @@ public class AudioHandler : MonoBehaviour
             {"win", sourceList[0]},
             {"lose", sourceList[1]},
             {"walk", sourceList[2]},
-            {"advance_objective", sourceList[3]}
+            {"advance_objective", sourceList[3]},
+            {"ambient", sourceList[4]},
+            {"frenzy_warning", sourceList[5]}
         };
     }
 

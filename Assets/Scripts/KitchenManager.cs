@@ -1,9 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Scene = UnityEditor.SearchService.Scene;
 
 public class KitchenManager : MonoBehaviour
 {
@@ -35,15 +33,14 @@ public class KitchenManager : MonoBehaviour
         {
             AudioHandler.Play("advance_objective");
             currentState += 1;
-            Pol.speed += 0.05f;
-            Debug.Log("pol speed: " + Pol.speed);
+            Pol.speed += 0.3f;
+            //Debug.Log("pol speed: " + Pol.speed);
             StartCoroutine(UIManager.UpdateObjectiveUI(currentState));
         }
         else if (currentState + 1 == GameState.WaitForOven)
         {
             currentState += 1;
-            Pol.speed += 0.1f;
-            Debug.Log("pol speed: " + Pol.speed);
+            //Debug.Log("pol speed: " + Pol.speed);
             AudioHandler.Play("advance_objective");
             StartCoroutine(UIManager.UpdateObjectiveUI(currentState));
             StartCoroutine(WaitForOven());
@@ -58,6 +55,7 @@ public class KitchenManager : MonoBehaviour
     public void GameOverWin()
     {
         Time.timeScale = 0;
+        Cursor.visible = true;
         Pol.ToggleSound(false);
         AudioHandler.Play("win");
         UIManager.DisplayWin();
@@ -66,6 +64,7 @@ public class KitchenManager : MonoBehaviour
     public void GameOverLose()
     {
         Time.timeScale = 0;
+        Cursor.visible = true;
         Pol.ToggleSound(false);
         UIManager.DisplayLose();
         AudioHandler.Play("lose");
@@ -76,6 +75,13 @@ public class KitchenManager : MonoBehaviour
         gameActive = true;
         Pol.ToggleSound(true);
         Time.timeScale = 1;
+        Cursor.visible = false;
+        
+        // PATCHWORK FIX FOR ODD MOVEMENT PROBLEMS
+        GameObject player = GameObject.Find("Player");
+        player.GetComponent<Rigidbody>().mass = 5;
+        player.GetComponent<Rigidbody>().drag = 7;
+        player.GetComponent<PlayerControls>().MovementScale = 2;
     }
 
     public void RestartGame()
@@ -87,9 +93,9 @@ public class KitchenManager : MonoBehaviour
 
     IEnumerator WaitForOven()
     {
-        Debug.Log("oven started");
+        //Debug.Log("oven started");
         yield return new WaitForSeconds(ovenTimer);
-        Debug.Log("oven done");
+        //Debug.Log("oven done");
         currentState += 1;
         cake.SetActive(true);
         AudioHandler.Play("advance_objective");

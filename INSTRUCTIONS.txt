@@ -1,0 +1,24 @@
+Welcome to this game that needs a proper title. You'll learn more background about the game itself once you start playing,
+but it's essentially a "horror" "baking" "simulator" where you must collect ingredients and bake a cake before you get 
+caught by French-Canadian chef Pol Martin (he's...a character). Also, it's completely dark and you only have a flashlight.
+
+On screen, you will see tools (2d sprites) and ingredients (3d models). You'll also see a very tall Pol Martin running after you.
+Follow the tasks on the top left. To complete them, find the mentioned object and "interact" with it by walking into it. You technically
+have an inventory of stuff you've collected, but it's imaginary right now. If an object disappears, it means you've "picked it up".
+
+NOTE: In the Game window (that comes up when you press Play), change the resolution at the top of the window from "Free Aspect" to "Full HD".
+Otherwise you may notice visual issues, as this game was designed for 16:9 aspect ratios.
+
+NOTE 2: If you start walking at a very very slow pace (you can tell, it feels like a crawl and it's hard to get away from Pol at the start)
+then restart Unity. This seems to be some inconsistent Unity bug or something that I can't figure out the cause of.
+
+Controls:
+WASD - Move around (forward, left, right, backwards respectively)
+Mouse - Look around
+Collide/walk into object - Interact with object or pick it up
+
+You win the game if you follow the instructions to bake the cake and pick it up before Pol Martin catches you. 
+If he does run into you, you die. Pol's movement gets sligtly faster after you complete each objective.
+
+Oh, one last thing: sometimes during the game Pol will enter a "frenzy" where he temporatily moves much faster. You'll know
+when it happens.

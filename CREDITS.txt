@@ -6,6 +6,7 @@ Sound:
 - Lose Sound: HorrorAudio via freesound.org
 - Heartbeat sound: InspectorJ via freesound.org
 - Walking sound: simoneyoh3998 via freesound.org
+- Frenzy Sound: old_waveplay via freesound.org
 
 Graphics:
 - Butter, Cake, Flour, Sugar 3D models and textures by Riley Boksenbaum, NU '24
@@ -18,6 +19,9 @@ Graphics:
 Models:
 - Pol Martin, wet food models and textures by socpens (twitch.tv/socpens)
 - Animation set by Kevin Iglesias via Unity Asset Store
+
+Fonts:
+- Scary Light by Yoga Letter
 
 Most sources here fall under Creative Commons, but regardless all sources are property of their 
 respective owners and are not to be used in a commercial setting.

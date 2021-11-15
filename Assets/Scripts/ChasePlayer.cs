@@ -9,7 +9,8 @@ public class ChasePlayer : MonoBehaviour
     public float speed = 1f;
     public KitchenManager KitchenManager;
     public Animator Animator;
-    public AudioSource audio;
+    public AudioSource heartbeat;
+    public AudioHandler AudioHandler;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,19 @@ public class ChasePlayer : MonoBehaviour
 
     public void ToggleSound(bool val)
     {
-        if (val) { audio.Play(); } else { audio.Stop(); }
+        if (val) { heartbeat.Play(); } else { heartbeat.Stop(); }
+    }
+
+    public IEnumerator BeginFrenzy(int time)
+    {
+        //Debug.Log("frenzy started for " + time + " seconds");
+        AudioHandler.Play("frenzy_warning");
+        speed += 1f;
+        Animator.speed += 0.3f;
+        StartCoroutine(KitchenManager.UIManager.FlashFrenzyMessage(time));
+        yield return new WaitForSeconds(time);
+        speed -= 1f;
+        Animator.speed -= 0.3f;
     }
     
 }

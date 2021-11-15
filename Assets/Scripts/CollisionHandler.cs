@@ -48,6 +48,8 @@ public class CollisionHandler : MonoBehaviour
                 //InactiveObjects.Add(object2.tag, object2);
                 object2.SetActive(false);
             }
+            
+            CheckForFrenzy(tag);
 
             if (tag == "cake")
             {
@@ -63,12 +65,25 @@ public class CollisionHandler : MonoBehaviour
         GameState state = KitchenManager.currentState;
 
         if (tag == "egg"|| tag == "flour" || tag == "sugar" ||
-            tag == "milk" || tag == "butter" || tag == "salt" || tag == "bowl" && state == GameState.InsertMixer)
+            tag == "milk" || tag == "butter" || tag == "salt" || tag == "bowl" && state == GameState.DepositEggs
+            || tag == "pan" && state == GameState.GetPan)
         {
             return true;
         }
 
         return false;
+    }
+
+    public void CheckForFrenzy(string tag)
+    {
+        if (tag == "bowl" && KitchenManager.currentState == GameState.DepositEggs)
+        {
+            StartCoroutine(KitchenManager.Pol.BeginFrenzy(20));
+            
+        } else if (tag == "oven")
+        {
+            StartCoroutine(KitchenManager.Pol.BeginFrenzy(30));
+        }
     }
     
 }
