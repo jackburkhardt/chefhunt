@@ -31,7 +31,7 @@ Sound:
 - Frenzy Sound: old_waveplay via freesound.org
 
 Graphics:
-- Butter, Cake, Flour, Sugar 3D models and textures by Riley Boksenbaum, NU '24
+- Butter, Cake, Flour, Sugar 3D models and textures by [a11ce](https://github.com/a11ce)
 - Salt: ramiescalante via turbosquid.com
 - Milk: vabart via sketchfab.com
 - Egg: pepnudl via cgtrader.com
