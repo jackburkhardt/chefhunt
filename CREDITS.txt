@@ -1,0 +1,23 @@
+Thanks to the following sources for creating and contributing resources used in this project:
+
+Sound:
+- Background loop: JarredGibb via freesound.org
+- Win Sound: jobro via freesound.org
+- Lose Sound: HorrorAudio via freesound.org
+- Heartbeat sound: InspectorJ via freesound.org
+- Walking sound: simoneyoh3998 via freesound.org
+
+Graphics:
+- Butter, Cake, Flour, Sugar 3D models and textures by Riley Boksenbaum, NU '24
+- Salt: ramiescalante via turbosquid.com
+- Milk: vabart via sketchfab.com
+- Egg: pepnudl via cgtrader.com
+- 2d images sourced from various locations including Adobe Stock image library
+- Shaders and some materials by Kodrin (https://github.com/Kodrin/URP-PSX)
+
+Models:
+- Pol Martin, wet food models and textures by socpens (twitch.tv/socpens)
+- Animation set by Kevin Iglesias via Unity Asset Store
+
+Most sources here fall under Creative Commons, but regardless all sources are property of their 
+respective owners and are not to be used in a commercial setting.
