@@ -47,3 +47,6 @@ Fonts:
 
 Most sources here fall under Creative Commons, but regardless all sources are property of their 
 respective owners and are not to be used in a commercial setting.
+
+## Usage
+You're free to do whatever you want with this project, so long as it remains non-commercial. If you're a current 376 student, please don't use any of this. It's not worth it.
