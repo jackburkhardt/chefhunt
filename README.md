@@ -14,10 +14,10 @@ If he does run into you, you die. Pol's movement gets slightly faster after you 
 Oh, one last thing: sometimes during the game Pol will enter a "frenzy" where he temporarily moves much faster. You'll know when it happens.
 
 ## Controls
-WASD - Move around (forward, left, right, backwards respectively)
-Mouse - Look around
-Collide/walk into object - Interact with object or pick it up
-Escape - quit game (build versions only)
+- WASD - Move around (forward, left, right, backwards respectively)
+- Mouse - Look around
+- Collide/walk into object - Interact with object or pick it up
+- Escape - quit game (build versions only)
 
 ## Credits
 Thanks to the following sources for creating and contributing resources used in this project:
@@ -31,7 +31,7 @@ Sound:
 - Frenzy Sound: old_waveplay via freesound.org
 
 Graphics:
-- Butter, Cake, Flour, Sugar 3D models and textures by Riley Boksenbaum, NU '24
+- Butter, Cake, Flour, Sugar 3D models and textures by [a11ce](https://github.com/a11ce)
 - Salt: ramiescalante via turbosquid.com
 - Milk: vabart via sketchfab.com
 - Egg: pepnudl via cgtrader.com
@@ -47,3 +47,6 @@ Fonts:
 
 Most sources here fall under Creative Commons, but regardless all sources are property of their 
 respective owners and are not to be used in a commercial setting.
+
+## Usage
+You're free to do whatever you want with this project, so long as it remains non-commercial and retains proper attribution to me and the others mentioned in the credits. If you're a current CS 376 student, you may not use any of this for your own projects.
