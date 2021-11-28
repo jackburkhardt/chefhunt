@@ -14,27 +14,27 @@ public class PlayerControls : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
         
         Rigidbody rb = GetComponent<Rigidbody>();
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddRelativeForce(Vector3.left * MovementScale, ForceMode.Impulse);
+            rb.AddRelativeForce(Vector3.left * MovementScale, ForceMode.VelocityChange);
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
-            rb.AddRelativeForce(Vector3.right * MovementScale, ForceMode.Impulse);
+            rb.AddRelativeForce(Vector3.right * MovementScale, ForceMode.VelocityChange);
         }
 
         else if (Input.GetKey(KeyCode.W))
         {
-            rb.AddRelativeForce(Vector3.forward * MovementScale, ForceMode.Impulse);
+            rb.AddRelativeForce(Vector3.forward * MovementScale, ForceMode.VelocityChange);
         }
 
         else if (Input.GetKey(KeyCode.S))
         {
-            rb.AddRelativeForce(Vector3.back * MovementScale, ForceMode.Impulse);
+            rb.AddRelativeForce(Vector3.back * MovementScale, ForceMode.VelocityChange);
         }
 
         // if (rb.velocity.magnitude >= 0.3)

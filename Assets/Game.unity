@@ -3327,7 +3327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56bd4c6cd60cb0c408b389e281d9c4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementScale: 2
+  MovementScale: 1.8
   AudioHandler: {fileID: 1738511272}
 --- !u!114 &1413165377
 MonoBehaviour:
