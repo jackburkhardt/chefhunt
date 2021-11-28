@@ -49,4 +49,4 @@ Most sources here fall under Creative Commons, but regardless all sources are pr
 respective owners and are not to be used in a commercial setting.
 
 ## Usage
-You're free to do whatever you want with this project, so long as it remains non-commercial. If you're a current 376 student, please don't use any of this. It's not worth it.
+You're free to do whatever you want with this project, so long as it remains non-commercial and retains proper attribution to me and the others mentioned in the credits. If you're a current CS 376 student, you may not use any of this for your own projects.
