@@ -3,6 +3,7 @@ chefhunt was created for another homework assignment as part of Northwestern's C
 
 You'll learn more background about the game itself once you start playing, but it's essentially a "horror" "baking" "simulator" where you must collect ingredients and bake a cake before you get caught by French-Canadian chef Pol Martin (he's...[a character](https://twitter.com/oakeymations/status/1319129464438140928)). Also, it's completely dark and you only have a flashlight.
 
+You can find downloadable builds of this game under [Releases](https://github.com/jackburkhardt/chefhunt/releases).
 
 ## Instructions
 
